@@ -39,9 +39,7 @@ class Documents:
                         run.add_text(text)
 
     def create_document(self):
-        logging.debug("entrou no create")
         dir_path = os.path.dirname(self.final_document_path)
-        logging.debug("dir path")
         self.create_directory_if_not_exists(dir_path)
 
         if os.path.exists(self.final_document_path):
