@@ -67,13 +67,13 @@ class Interface:
         if self.values['sim']:
             self.option = True
         elif self.values['nao']:
-            self.values = False
+            self.option = False
 
     def get_registration_status(self, cnpj_registration_status):
         if self.option is True: 
             return cnpj_registration_status
         else: 
-            return ''
+            return ""
         
     def run(self):
         self.loop_system()
