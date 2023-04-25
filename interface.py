@@ -6,6 +6,7 @@ import logging
 class Interface:
     def __init__(self):
 
+        simpleGui.theme('Dark')
         #Layout
         layout = [
             [simpleGui.Text('CNPJ.', size=(10,0)), simpleGui.Input(size=(14,0), key=('cnpj'),  enable_events=True)],
